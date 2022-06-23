@@ -1,3 +1,39 @@
-body {
-    color: blue;
+:root {
+  --heading-font-family:  'Nunito', sans-serif;
+  --webpage-color-scheme:  rgb(122, 69, 25);
+  --secondary-color-scheme: rgb(237, 197, 158);
+}
+
+h1 {
+  color: black;
+  font-family: var(--heading-font-family);
+  font-weight: bold;
+}
+
+.homepage-hero {
+  text-align: center;
+  padding: 160px 20px;
+  background: (--secondary-color-scheme);
+}
+
+.homepage-hero h1 {
+    font-size: 72px;
+}
+
+.homepage-hero h2 {
+  font-family: var(--heading-font-family);
+  font-weight: normal;
+  color: darkslategrey;
+  line-height: 2;
+  font-size: 24px;
+}
+
+.btn-branding {
+  background: var(--webpage-color-scheme);
+  border-radius: 4px;
+  color: white;
+  font-size: 18px;
+  line-height: 27px;
+  padding: 15px 30px;
+  font-family: (--heading-font-family);
 }
