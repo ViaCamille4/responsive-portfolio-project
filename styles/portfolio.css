@@ -29,7 +29,6 @@ img {
   font-family: "Poppins", sans-serif;
 }
 
-
 .homepage-hero h1 {
     font-size: 72px;
 }
@@ -40,6 +39,10 @@ img {
   color: darkslategrey;
   line-height: 2;
   font-size: 24px;
+}
+
+.project-description {
+    font-family: var(--heading-font-family);
 }
 
 .btn-branding {
