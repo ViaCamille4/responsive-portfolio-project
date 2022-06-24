@@ -36,7 +36,7 @@ h1 {
   font-size: 24px;
 }
 
-.button {
+.btn-branding {
   background: var(--webpage-color-scheme);
   border-radius: 4px;
   color: white;
