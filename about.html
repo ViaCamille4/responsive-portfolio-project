@@ -13,7 +13,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 </head>
 <body>
-    <nav class="navbar navbar-expand-md navbar-light border border-dark" style="background-color: #bc9161;">
+    <nav class="navbar navbar-expand-md navbar-light border border-dark" style="background: var(--webpage-color-scheme)">
           <div class="container-fluid">
               <a class="navbar-brand" href="index.html"> 
                 Via's Recipes
@@ -31,33 +31,44 @@
             </div>
           </div>
         </nav>
-<div class="container backdrop">
+    <h2 class="mt-2"><strong>About Me</strong></h2>
+    <hr>
+<div class="container content-container backdrop">
     <div class="row mt-5 mb-2">
-        <div class="col-4">
-        <img src="images/profile-pic.jpeg" class="img-fluid rounded profile-picture" alt="Picture of site owner Via"/>
+        <div class="col-md-4">
+        <img src="images/profile-pic.jpeg" class="img-fluid rounded profile-pic" alt="Picture of site owner Via"/>
         </div>
-    <div class="col-8">
+    <div class="col-md-8">
         <h1> Welcome to my Kitchen! </h1>
 <p>My name is Via, a passionate home cook on a limitless culinary adventure, but with some limiting food allergies! Here I am compiling a collection of 
     my favorite multi-ethnic recipes, but altered and perfected for gluten, soy, and dairy allergies, or lifestyle preference of vegetarian and vegan cuisine. 
     ALL recipes are GLUTEN-FREE (Celiac's friendly)! Most recipes will have vegan/vegetarian substitution recommendations 
     if they are not already! 
-</p>
+    </p>
+    <br>
+    <br>
+    <div style="text-align:center">
+    <strong>Here is the key that will be used to identify recipe specifications:</strong>
+
+<img src="images/nutrition.png" class="img-fluid mx-auto" style="width:600px" alt="allergy key"/>
     </div>
-</div>
-<div class="row">
-    <img src="images/nutrition.png" class="img-fluid" alt="allergy key"/>
-</div>
-<h2>
-Let's dive right in! 
-</h2>
-<br>
-<a href="recipes.html" class="btn">Explore All Recipes</a>
+    </div>
 </div>
 
-        <div id="contact" class="p-5">
+<h2 class="mt-5 d-flex justify-content-center" style="font-family: var(--heading-font-family);">
+Let's dive right in! 
+</h2>
+</div>
+<br>
+
+<a href="recipes.html" class=" recipe-btn d-flex justify-content-center mx-auto" role="button" style="width:300px">Explore All Recipes</a>
+
+
+<footer class="container">
+<div id="contact" class="contact-box justify-content-between mt-5 mb-5 d-none d-md-flex">
       <h2>Questions? Let's get in touch!</h2>
       <a href="contact.html" class="contact-link" id="contact"> Contact Me </a>
-    </div>
+</div>
+</footer>
 </body>
 </html>

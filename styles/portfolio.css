@@ -1,7 +1,7 @@
 :root {
   --heading-font-family:  'Nunito', sans-serif;
-  --webpage-color-scheme:  rgb(122, 69, 25);
-  --secondary-color-scheme: rgb(237, 197, 158);
+  --webpage-color-scheme:  rgb(240, 176, 145);
+  --secondary-color-scheme: #FBF8F3;;
 }
 
 h1 {
@@ -10,10 +10,11 @@ h1 {
   font-weight: bold;
 }
 
-img {
-    width: 400px;
-    height: 400px;
+h2 {
+   font-family: var(--heading-font-family); 
+   text-align: center;
 }
+
 
 
 .homepage-hero {
@@ -45,16 +46,6 @@ img {
     font-family: var(--heading-font-family);
 }
 
-.btn-branding {
-  background: var(--webpage-color-scheme);
-  border-radius: 4px;
-  color: white;
-  font-size: 18px;
-  line-height: 27px;
-  padding: 15px 30px;
-  font-family: var(--heading-font-family);
-}
-
 .email-link {
   display: flex;
   justify-content: center;
@@ -67,12 +58,71 @@ img {
   text-decoration: underline;
 }
 
-.profile-picture {
+.content-container {
+  padding: 20px 60px;
+}
 
+ @media (max-width: 576px) { 
+.profile-pic {
+display: flex;
+ width: auto;
+ height: auto;
+ justify-content: center;
+ }
+}
+
+.recipe-navigation {
+    display: flex;
+    justify-content: center;
+}
+
+.recipe-btn {
+    display:flex;
+    align-items: center;
 }
 
 .backdrop {
     background: #FBF8F3;
+}
+
+.recipe-btn {
+  background-color: var(--webpage-color-scheme);
+  border: 2px solid #422800;
+  border-radius: 30px;
+  box-shadow: #422800 4px 4px 0 0;
+  color: #422800;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 600;
+  font-size: 18px;
+  padding: 0 18px;
+  line-height: 50px;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.recipe-btn:hover {
+  background-color: #fff;
+  text-decoration: underline;
+}
+
+.recipe-btn:active {
+  box-shadow: #422800 2px 2px 0 0;
+  transform: translate(2px, 2px);
+}
+
+@media (min-width: 768px) {
+  .recipe-btn {
+    min-width: 120px;
+    padding: 0 25px;
+  }
+}
+
+.contact-box {
+    font-family: var(--heading-font-family);
 }
 
 
